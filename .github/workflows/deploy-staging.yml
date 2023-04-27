@@ -18,12 +18,15 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v3
-      - name: npm install and build webpack
+      - name: npm install and build webpack 1
       #  run: |
-      - run: npm install
-      - run: npm audit fix
-      - run: npm install
-      - run: npm run build
+        run: npm install
+      - name: npm install and build webpack 2
+        run: npm audit fix
+      - name: npm install and build webpack 3
+        run: npm install
+      - name: npm install and build webpack 4
+        run: npm run build
       - uses: actions/upload-artifact@v3
         with:
           name: webpack artifacts
