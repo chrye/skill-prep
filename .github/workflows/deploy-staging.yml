@@ -21,7 +21,7 @@ jobs:
       - name: npm install and build webpack 1
         run: npm install
       - name: npm install and build webpack 2
-        run: npm audit fix
+        run: npm audit fix --force
       - name: npm install and build webpack 3
         run: npm install
       - name: npm install and build webpack 4
